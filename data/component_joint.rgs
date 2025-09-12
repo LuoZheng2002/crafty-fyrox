@@ -1,0 +1,664 @@
+FTAX:2;
+__ROOT__[]
+{
+	Scene[]
+	{
+		Graph[]
+		{
+			Root[Index<u32:0>Generation<u32:1>]{}
+			Pool[]
+			{
+				Records[Length<u32:6>]
+				{
+					Item0[Generation<u32:1>]
+					{
+						Payload[IsSome<u8:1>]
+						{
+							Data[TypeUuid<uuid:dd2ecb96-b1f4-4ee0-943b-2a4d1844e3bb>]
+							{
+								NodeData[Name<str:"ComponentJoint">IsResourceInstance<bool:false>InstanceId<uuid:ebf32418-6605-46f7-8a11-f0fdf69fab29>]
+								{
+									Transform[]
+									{
+										LocalScale[Value<vec3f32:1; 1; 1>Flags<u8:1>]{}
+										LocalPosition[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										LocalRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+										PreRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+										PostRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+										RotationOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										RotationPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										ScalingOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										ScalingPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+									}
+									Visibility[Value<bool:true>Flags<u8:1>]{}
+									Parent[Index<u32:0>Generation<u32:0>]{}
+									Children[Length<u32:5>]
+									{
+										Item0[Index<u32:1>Generation<u32:1>]{}
+										Item1[Index<u32:2>Generation<u32:1>]{}
+										Item2[Index<u32:3>Generation<u32:1>]{}
+										Item3[Index<u32:4>Generation<u32:1>]{}
+										Item4[Index<u32:5>Generation<u32:1>]{}
+									}
+									Resource[IsSome<u8:0>]{}
+									Lifetime[Flags<u8:1>]
+									{
+										Value[IsSome<u8:0>]{}
+									}
+									LodGroup[Flags<u8:1>]
+									{
+										Value[IsSome<u8:0>]{}
+									}
+									Mobility[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]{}
+									}
+									Original[Index<u32:0>Generation<u32:0>]{}
+									Tag[Value<str:"">Flags<u8:1>]{}
+									Properties[Flags<u8:1>]
+									{
+										Value[Length<u32:0>]{}
+									}
+									FrustumCulling[Value<bool:true>Flags<u8:1>]{}
+									CastShadows[Value<bool:true>Flags<u8:1>]{}
+									Enabled[Value<bool:true>Flags<u8:1>]{}
+									RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
+									Scripts[Length<u32:1>]
+									{
+										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
+										{
+											ScriptData[Initialized<bool:false>]
+											{
+												Data[]
+												{
+													BallJoint1[Index<u32:3>Generation<u32:1>]{}
+													BallJoint2[Index<u32:0>Generation<u32:0>]{}
+													PrismaticJoint[Index<u32:0>Generation<u32:0>]{}
+													ConnectedBody1[Index<u32:0>Generation<u32:0>]{}
+													ConnectedBody2[Index<u32:0>Generation<u32:0>]{}
+													Test[Index<u32:3>Generation<u32:1>]{}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					Item1[Generation<u32:1>]
+					{
+						Payload[IsSome<u8:1>]
+						{
+							Data[TypeUuid<uuid:4be15a7c-3566-49c4-bba8-2f4ccc57ffed>]
+							{
+								NodeData[]
+								{
+									Base[Name<str:"Rigid Body1">IsResourceInstance<bool:false>InstanceId<uuid:89d67d7b-99ea-425e-b3ba-af541a87524f>]
+									{
+										Transform[]
+										{
+											LocalScale[Value<vec3f32:1; 1; 1>Flags<u8:1>]{}
+											LocalPosition[Value<vec3f32:0; 0; 0.5>Flags<u8:1>]{}
+											LocalRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PreRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PostRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											RotationOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											RotationPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										}
+										Visibility[Value<bool:true>Flags<u8:1>]{}
+										Parent[Index<u32:0>Generation<u32:1>]{}
+										Children[Length<u32:0>]{}
+										Resource[IsSome<u8:0>]{}
+										Lifetime[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										LodGroup[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										Mobility[Flags<u8:1>]
+										{
+											Value[Id<u32:0>]{}
+										}
+										Original[Index<u32:0>Generation<u32:0>]{}
+										Tag[Value<str:"">Flags<u8:1>]{}
+										Properties[Flags<u8:1>]
+										{
+											Value[Length<u32:0>]{}
+										}
+										FrustumCulling[Value<bool:true>Flags<u8:1>]{}
+										CastShadows[Value<bool:true>Flags<u8:1>]{}
+										Enabled[Value<bool:true>Flags<u8:1>]{}
+										RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
+										Scripts[Length<u32:0>]{}
+									}
+									LinVel[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+									AngVel[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+									LinDamping[Value<f32:0>Flags<u8:1>]{}
+									AngDamping[Value<f32:0>Flags<u8:1>]{}
+									BodyType[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]{}
+									}
+									Mass[Value<f32:1>Flags<u8:1>]{}
+									XRotationLocked[Value<bool:false>Flags<u8:1>]{}
+									YRotationLocked[Value<bool:false>Flags<u8:1>]{}
+									ZRotationLocked[Value<bool:false>Flags<u8:1>]{}
+									TranslationLocked[Value<bool:false>Flags<u8:1>]{}
+									CcdEnabled[Value<bool:false>Flags<u8:1>]{}
+									CanSleep[Value<bool:true>Flags<u8:1>]{}
+									Dominance[Value<i8:0>Flags<u8:1>]{}
+									GravityScale[Value<f32:1>Flags<u8:1>]{}
+									MassPropertiesType[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]{}
+									}
+								}
+							}
+						}
+					}
+					Item2[Generation<u32:1>]
+					{
+						Payload[IsSome<u8:1>]
+						{
+							Data[TypeUuid<uuid:4be15a7c-3566-49c4-bba8-2f4ccc57ffed>]
+							{
+								NodeData[]
+								{
+									Base[Name<str:"Rigid Body2">IsResourceInstance<bool:false>InstanceId<uuid:4e3e4413-372d-42ae-b161-2a9628add0b2>]
+									{
+										Transform[]
+										{
+											LocalScale[Value<vec3f32:1; 1; 1>Flags<u8:1>]{}
+											LocalPosition[Value<vec3f32:0; 0; -0.5>Flags<u8:1>]{}
+											LocalRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PreRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PostRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											RotationOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											RotationPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										}
+										Visibility[Value<bool:true>Flags<u8:1>]{}
+										Parent[Index<u32:0>Generation<u32:1>]{}
+										Children[Length<u32:0>]{}
+										Resource[IsSome<u8:0>]{}
+										Lifetime[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										LodGroup[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										Mobility[Flags<u8:1>]
+										{
+											Value[Id<u32:0>]{}
+										}
+										Original[Index<u32:0>Generation<u32:0>]{}
+										Tag[Value<str:"">Flags<u8:1>]{}
+										Properties[Flags<u8:1>]
+										{
+											Value[Length<u32:0>]{}
+										}
+										FrustumCulling[Value<bool:true>Flags<u8:1>]{}
+										CastShadows[Value<bool:true>Flags<u8:1>]{}
+										Enabled[Value<bool:true>Flags<u8:1>]{}
+										RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
+										Scripts[Length<u32:0>]{}
+									}
+									LinVel[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+									AngVel[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+									LinDamping[Value<f32:0>Flags<u8:1>]{}
+									AngDamping[Value<f32:0>Flags<u8:1>]{}
+									BodyType[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]{}
+									}
+									Mass[Value<f32:1>Flags<u8:1>]{}
+									XRotationLocked[Value<bool:false>Flags<u8:1>]{}
+									YRotationLocked[Value<bool:false>Flags<u8:1>]{}
+									ZRotationLocked[Value<bool:false>Flags<u8:1>]{}
+									TranslationLocked[Value<bool:false>Flags<u8:1>]{}
+									CcdEnabled[Value<bool:false>Flags<u8:1>]{}
+									CanSleep[Value<bool:true>Flags<u8:1>]{}
+									Dominance[Value<i8:0>Flags<u8:1>]{}
+									GravityScale[Value<f32:1>Flags<u8:1>]{}
+									MassPropertiesType[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]{}
+									}
+								}
+							}
+						}
+					}
+					Item3[Generation<u32:1>]
+					{
+						Payload[IsSome<u8:1>]
+						{
+							Data[TypeUuid<uuid:439d48f5-e3a3-4255-aa08-353c1ca42e3b>]
+							{
+								NodeData[]
+								{
+									Base[Name<str:"Ball Joint1">IsResourceInstance<bool:false>InstanceId<uuid:ec81d8d8-5c1a-4f6a-baa8-66d64c65dd88>]
+									{
+										Transform[]
+										{
+											LocalScale[Value<vec3f32:1; 1; 1>Flags<u8:1>]{}
+											LocalPosition[Value<vec3f32:0; 0; 0.5>Flags<u8:1>]{}
+											LocalRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PreRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PostRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											RotationOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											RotationPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										}
+										Visibility[Value<bool:true>Flags<u8:1>]{}
+										Parent[Index<u32:0>Generation<u32:1>]{}
+										Children[Length<u32:0>]{}
+										Resource[IsSome<u8:0>]{}
+										Lifetime[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										LodGroup[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										Mobility[Flags<u8:1>]
+										{
+											Value[Id<u32:0>]{}
+										}
+										Original[Index<u32:0>Generation<u32:0>]{}
+										Tag[Value<str:"">Flags<u8:1>]{}
+										Properties[Flags<u8:1>]
+										{
+											Value[Length<u32:0>]{}
+										}
+										FrustumCulling[Value<bool:true>Flags<u8:1>]{}
+										CastShadows[Value<bool:true>Flags<u8:1>]{}
+										Enabled[Value<bool:true>Flags<u8:1>]{}
+										RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
+										Scripts[Length<u32:0>]{}
+									}
+									Params[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]
+										{
+											0[XLimitsEnabled<bool:false>YLimitsEnabled<bool:false>ZLimitsEnabled<bool:false>]
+											{
+												XLimitsAngles[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+												YLimitsAngles[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+												ZLimitsAngles[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+											}
+										}
+									}
+									MotorParams[Flags<u8:1>]
+									{
+										Value[TargetVel<f32:0>TargetPos<f32:0>Stiffness<f32:0>Damping<f32:0>MaxForce<f32:0>]{}
+									}
+									Body1[Flags<u8:1>]
+									{
+										Value[Index<u32:1>Generation<u32:1>]{}
+									}
+									Body2[Flags<u8:1>]
+									{
+										Value[Index<u32:0>Generation<u32:0>]{}
+									}
+									ContactsEnabled[Value<bool:true>Flags<u8:1>]{}
+									AutoRebind[Value<bool:true>Flags<u8:1>]{}
+									LocalFrames[IsSome<u8:0>]{}
+								}
+							}
+						}
+					}
+					Item4[Generation<u32:1>]
+					{
+						Payload[IsSome<u8:1>]
+						{
+							Data[TypeUuid<uuid:439d48f5-e3a3-4255-aa08-353c1ca42e3b>]
+							{
+								NodeData[]
+								{
+									Base[Name<str:"Ball Joint2">IsResourceInstance<bool:false>InstanceId<uuid:288bc4ea-4108-48d8-a7fc-687704c75237>]
+									{
+										Transform[]
+										{
+											LocalScale[Value<vec3f32:1; 1; 1>Flags<u8:1>]{}
+											LocalPosition[Value<vec3f32:0; 0; -0.5>Flags<u8:1>]{}
+											LocalRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PreRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PostRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											RotationOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											RotationPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										}
+										Visibility[Value<bool:true>Flags<u8:1>]{}
+										Parent[Index<u32:0>Generation<u32:1>]{}
+										Children[Length<u32:0>]{}
+										Resource[IsSome<u8:0>]{}
+										Lifetime[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										LodGroup[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										Mobility[Flags<u8:1>]
+										{
+											Value[Id<u32:0>]{}
+										}
+										Original[Index<u32:0>Generation<u32:0>]{}
+										Tag[Value<str:"">Flags<u8:1>]{}
+										Properties[Flags<u8:1>]
+										{
+											Value[Length<u32:0>]{}
+										}
+										FrustumCulling[Value<bool:true>Flags<u8:1>]{}
+										CastShadows[Value<bool:true>Flags<u8:1>]{}
+										Enabled[Value<bool:true>Flags<u8:1>]{}
+										RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
+										Scripts[Length<u32:0>]{}
+									}
+									Params[Flags<u8:1>]
+									{
+										Value[Id<u32:0>]
+										{
+											0[XLimitsEnabled<bool:false>YLimitsEnabled<bool:false>ZLimitsEnabled<bool:false>]
+											{
+												XLimitsAngles[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+												YLimitsAngles[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+												ZLimitsAngles[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+											}
+										}
+									}
+									MotorParams[Flags<u8:1>]
+									{
+										Value[TargetVel<f32:0>TargetPos<f32:0>Stiffness<f32:0>Damping<f32:0>MaxForce<f32:0>]{}
+									}
+									Body1[Flags<u8:1>]
+									{
+										Value[Index<u32:2>Generation<u32:1>]{}
+									}
+									Body2[Flags<u8:1>]
+									{
+										Value[Index<u32:0>Generation<u32:0>]{}
+									}
+									ContactsEnabled[Value<bool:true>Flags<u8:1>]{}
+									AutoRebind[Value<bool:true>Flags<u8:1>]{}
+									LocalFrames[IsSome<u8:0>]{}
+								}
+							}
+						}
+					}
+					Item5[Generation<u32:1>]
+					{
+						Payload[IsSome<u8:1>]
+						{
+							Data[TypeUuid<uuid:439d48f5-e3a3-4255-aa08-353c1ca42e3b>]
+							{
+								NodeData[]
+								{
+									Base[Name<str:"Prismatic Joint">IsResourceInstance<bool:false>InstanceId<uuid:1b5b9076-8b8f-42f0-b387-50f9b0c877f8>]
+									{
+										Transform[]
+										{
+											LocalScale[Value<vec3f32:1; 1; 1>Flags<u8:1>]{}
+											LocalPosition[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											LocalRotation[Value<quat:0; 0.70710677; 0; 0.70710677>Flags<u8:1>]{}
+											PreRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											PostRotation[Value<quat:0; 0; 0; 1>Flags<u8:1>]{}
+											RotationOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											RotationPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingOffset[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+											ScalingPivot[Value<vec3f32:0; 0; 0>Flags<u8:1>]{}
+										}
+										Visibility[Value<bool:true>Flags<u8:1>]{}
+										Parent[Index<u32:0>Generation<u32:1>]{}
+										Children[Length<u32:0>]{}
+										Resource[IsSome<u8:0>]{}
+										Lifetime[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										LodGroup[Flags<u8:1>]
+										{
+											Value[IsSome<u8:0>]{}
+										}
+										Mobility[Flags<u8:1>]
+										{
+											Value[Id<u32:0>]{}
+										}
+										Original[Index<u32:0>Generation<u32:0>]{}
+										Tag[Value<str:"">Flags<u8:1>]{}
+										Properties[Flags<u8:1>]
+										{
+											Value[Length<u32:0>]{}
+										}
+										FrustumCulling[Value<bool:true>Flags<u8:1>]{}
+										CastShadows[Value<bool:true>Flags<u8:1>]{}
+										Enabled[Value<bool:true>Flags<u8:1>]{}
+										RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
+										Scripts[Length<u32:0>]{}
+									}
+									Params[Flags<u8:1>]
+									{
+										Value[Id<u32:2>]
+										{
+											0[LimitsEnabled<bool:false>]
+											{
+												Limits[Start<f32:-3.1415927>End<f32:3.1415927>]{}
+											}
+										}
+									}
+									MotorParams[Flags<u8:1>]
+									{
+										Value[TargetVel<f32:0>TargetPos<f32:0>Stiffness<f32:0>Damping<f32:0>MaxForce<f32:0>]{}
+									}
+									Body1[Flags<u8:1>]
+									{
+										Value[Index<u32:1>Generation<u32:1>]{}
+									}
+									Body2[Flags<u8:1>]
+									{
+										Value[Index<u32:2>Generation<u32:1>]{}
+									}
+									ContactsEnabled[Value<bool:true>Flags<u8:1>]{}
+									AutoRebind[Value<bool:true>Flags<u8:1>]{}
+									LocalFrames[IsSome<u8:1>]
+									{
+										Data[]
+										{
+											Body1[Position<vec3f32:0; 0; -0.5>Rotation<quat:0; 0.7071067; 0; 0.70710677>]{}
+											Body2[Position<vec3f32:0; 0; 0.5>Rotation<quat:0; 0.7071067; 0; 0.70710677>]{}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				FreeStack[Length<u32:0>]{}
+			}
+			SoundContext[]
+			{
+				Native[]
+				{
+					State[IsSome<u8:1>]
+					{
+						Data[Id<u64:1>]
+						{
+							ArcData[Paused<bool:false>]
+							{
+								Listener[Basis<mat3:0.7168007; 0; -0.69727814; -0.35849577; 0.8577087; -0.368533; -0.59806156; -0.5141359; -0.6148062>Position<vec3f32:1.9489514; 1.8839662; 2.4532588>]{}
+								BusGraph[]
+								{
+									Buses[]
+									{
+										Records[Length<u32:1>]
+										{
+											Item0[Generation<u32:1>]
+											{
+												Payload[IsSome<u8:1>]
+												{
+													Data[Name<str:"Primary">Gain<f32:1>]
+													{
+														Effects[Length<u32:0>]{}
+														ChildBuses[Length<u32:0>]{}
+														ParentBus[Index<u32:0>Generation<u32:0>]{}
+													}
+												}
+											}
+										}
+										FreeStack[Length<u32:0>]{}
+									}
+									Root[Index<u32:0>Generation<u32:1>]{}
+								}
+								Renderer[Id<u32:0>]{}
+								DistanceModel[Id<u32:1>]{}
+							}
+						}
+					}
+				}
+			}
+			PhysicsWorld[]
+			{
+				Enabled[Value<bool:true>Flags<u8:1>]{}
+				IntegrationParameters[Flags<u8:1>]
+				{
+					Value[MinCcdDt<f32:0.00016666668>ContactDampingRatio<f32:5>ContactNaturalFrequency<f32:30>JointNaturalFrequency<f32:1000000>JointDampingRatio<f32:1>AllowedLinearError<f32:0.002>NormalizedMaxCorrectiveVelocity<f32:10>PredictionDistance<f32:0.002>NumSolverIterations<u64:4>NumAdditionalFrictionIterations<u64:4>NumInternalPgsIterations<u64:1>MinIslandSize<u32:128>MaxCcdSubsteps<u32:4>WarmstartCoefficient<f32:1>LengthUnit<f32:1>NumInternalStabilizationIterations<u64:4>]
+					{
+						Dt[IsSome<u8:1>Data<f32:0>]{}
+					}
+				}
+				Gravity[Value<vec3f32:0; -9.81; 0>Flags<u8:1>]{}
+			}
+			PhysicsWorld2D[]
+			{
+				Enabled[Value<bool:true>Flags<u8:1>]{}
+				IntegrationParameters[Flags<u8:1>]
+				{
+					Value[MinCcdDt<f32:0.00016666668>ContactDampingRatio<f32:5>ContactNaturalFrequency<f32:30>JointNaturalFrequency<f32:1000000>JointDampingRatio<f32:1>AllowedLinearError<f32:0.002>NormalizedMaxCorrectiveVelocity<f32:10>PredictionDistance<f32:0.002>NumSolverIterations<u64:4>NumAdditionalFrictionIterations<u64:4>NumInternalPgsIterations<u64:1>MinIslandSize<u32:128>MaxCcdSubsteps<u32:4>WarmstartCoefficient<f32:1>LengthUnit<f32:1>NumInternalStabilizationIterations<u64:4>]
+					{
+						Dt[IsSome<u8:1>Data<f32:0>]{}
+					}
+				}
+				Gravity[Value<vec2f32:0; -9.81>Flags<u8:1>]{}
+			}
+			Lightmap[IsSome<u8:0>]{}
+		}
+		Enabled[Value<bool:true>Flags<u8:1>]{}
+		RenderingOptions[Flags<u8:1>]
+		{
+			Value[]
+			{
+				RenderTarget[IsSome<u8:0>]{}
+				ClearColor[IsSome<u8:0>]{}
+				PolygonRasterizationMode[Id<u32:2>]{}
+				AmbientLightingColor[R<u8:100>G<u8:100>B<u8:100>A<u8:255>]{}
+				EnvironmentLightingSource[Id<u32:0>]{}
+			}
+		}
+		SkyBox[Flags<u8:1>]
+		{
+			Value[IsSome<u8:1>]
+			{
+				Data[]
+				{
+					Front[IsSome<u8:1>]
+					{
+						Data[]
+						{
+							State[Id<u64:2>]
+							{
+								ArcData[ResourceUuid<uuid:f8d4519b-2947-4c83-9aa5-800a70ae918e>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+								{
+									Kind[Id<u32:1>]{}
+								}
+							}
+						}
+					}
+					Back[IsSome<u8:1>]
+					{
+						Data[]
+						{
+							State[Id<u64:3>]
+							{
+								ArcData[ResourceUuid<uuid:28676705-58bd-440f-b0aa-ce42cf95be79>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+								{
+									Kind[Id<u32:1>]{}
+								}
+							}
+						}
+					}
+					Left[IsSome<u8:1>]
+					{
+						Data[]
+						{
+							State[Id<u64:4>]
+							{
+								ArcData[ResourceUuid<uuid:1725b779-7633-477a-a7b0-995c079c3202>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+								{
+									Kind[Id<u32:1>]{}
+								}
+							}
+						}
+					}
+					Right[IsSome<u8:1>]
+					{
+						Data[]
+						{
+							State[Id<u64:5>]
+							{
+								ArcData[ResourceUuid<uuid:5f74865a-3eae-4bff-8743-b9d1f7bb3c59>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+								{
+									Kind[Id<u32:1>]{}
+								}
+							}
+						}
+					}
+					Top[IsSome<u8:1>]
+					{
+						Data[]
+						{
+							State[Id<u64:6>]
+							{
+								ArcData[ResourceUuid<uuid:03e38da7-53d1-48c0-87f8-2baf9869d61d>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+								{
+									Kind[Id<u32:1>]{}
+								}
+							}
+						}
+					}
+					Bottom[IsSome<u8:1>]
+					{
+						Data[]
+						{
+							State[Id<u64:7>]
+							{
+								ArcData[ResourceUuid<uuid:01684dc1-34b2-48b3-b8c2-30a7718cb9e7>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+								{
+									Kind[Id<u32:1>]{}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		NavMeshes[]
+		{
+			Pool[]
+			{
+				Records[Length<u32:0>]{}
+				FreeStack[Length<u32:0>]{}
+			}
+		}
+	}
+}
