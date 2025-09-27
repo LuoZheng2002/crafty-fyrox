@@ -60,17 +60,17 @@ impl ScriptTrait for ComponentJoint {
             let ball_joint1_script = context
                 .scene
                 .graph
-                .try_get_script_of::<BreakableBallJoint>(self.ball_joint1)
+                .try_get_script_of::<BreakableBallJoint>(self.ball_joint1.cast())
                 .expect("BreakableBallJoint script must be attached to the first ball joint");
             let ball_joint2_script = context
                 .scene
                 .graph
-                .try_get_script_of::<BreakableBallJoint>(self.ball_joint2)
+                .try_get_script_of::<BreakableBallJoint>(self.ball_joint2.cast())
                 .expect("BreakableBallJoint script must be attached to the second ball joint");
             let prismatic_joint_script = context
                 .scene
                 .graph
-                .try_get_script_of::<BreakablePrismaticJoint>(self.prismatic_joint)
+                .try_get_script_of::<BreakablePrismaticJoint>(self.prismatic_joint.cast())
                 .expect("BreakablePrismaticJoint script must be attached to the prismatic joint");
             ball_joint1_script.break_event.subscribe(context.handle);
             ball_joint2_script.break_event.subscribe(context.handle);
@@ -84,10 +84,10 @@ impl ScriptTrait for ComponentJoint {
         let connected_body2 = Handle::<RigidBody>::from(connected_body2);
         let mbc = context.scene.graph.begin_multi_borrow();
         let mut ball_joint1 = mbc
-            .try_get_component_of_type_mut::<Joint>(self.ball_joint1)
+            .try_get_component_of_type_mut::<Joint>(self.ball_joint1.cast())
             .unwrap();
         let mut ball_joint2 = mbc
-            .try_get_component_of_type_mut::<Joint>(self.ball_joint2)
+            .try_get_component_of_type_mut::<Joint>(self.ball_joint2.cast())
             .unwrap();
         ball_joint1.set_body2(connected_body1);
         ball_joint2.set_body2(connected_body2);

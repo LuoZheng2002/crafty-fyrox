@@ -15,7 +15,7 @@ impl ScriptTrait for Test {
     fn on_init(&mut self, context: &mut ScriptContext) {
         // Put initialization logic here.
         // let mut mbc = context.scene.graph.begin_multi_borrow();
-        context.scene.graph.pair_iter_mut()
+        // context.scene.graph.pair_iter_mut()
     }
 
     fn on_start(&mut self, context: &mut ScriptContext) {

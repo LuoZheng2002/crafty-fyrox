@@ -71,12 +71,12 @@ impl ScriptTrait for BreakablePrismaticJoint {
         let body1 = context
             .scene
             .graph
-            .typed_ref(joint.body1())
+            .try_get(joint.body1())
             .expect("Body1 of the ball joint is missing");
         let body2 = context
             .scene
             .graph
-            .typed_ref(joint.body2())
+            .try_get(joint.body2())
             .expect("Body2 of the ball joint is missing");
         let body1_transform = body1.global_transform();
         let body2_transform = body2.global_transform();
