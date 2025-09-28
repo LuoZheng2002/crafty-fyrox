@@ -90,7 +90,7 @@ impl ScriptTrait for BreakableBallJoint {
         let relative_rotation = angle1.inverse() * angle2;
         let angle = relative_rotation.angle();
         if angle > *self.threshold_angle {
-            self.break_event.fire(JointBreakEvent, context);
+            self.break_event.fire(JointBreakEvent::new(format!("ball joint breaks, angle: {}", angle)), context);
         }
     }
 }

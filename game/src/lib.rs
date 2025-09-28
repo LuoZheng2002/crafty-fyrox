@@ -9,9 +9,14 @@ use fyrox::{
     scene::Scene,
 };
 use std::path::Path;
+use breakable_ball_joint::BreakableBallJoint;
+use breakable_prismatic_joint::BreakablePrismaticJoint;
+use component_joint::ComponentJoint;
 
 // Re-export the engine.
 pub use fyrox;
+
+use crate::resume_physics::ResumePhysics;
 
 mod breakable_ball_joint;
 mod breakable_prismatic_joint;
@@ -19,6 +24,7 @@ mod component_joint;
 mod events;
 mod my_event;
 mod test;
+mod resume_physics;
 
 #[derive(Clone, Default, Visit, Reflect, Debug)]
 pub struct Game {
@@ -29,10 +35,10 @@ impl Plugin for Game {
     fn register(&self, context: PluginRegistrationContext) {
         // Register your scripts here.
         let script_constructors = &context.serialization_context.script_constructors;
-        script_constructors.add::<breakable_ball_joint::BreakableBallJoint>("BreakableBallJoint");
-        script_constructors
-            .add::<breakable_prismatic_joint::BreakablePrismaticJoint>("BreakablePrismaticJoint");
-        script_constructors.add::<component_joint::ComponentJoint>("ComponentJoint");
+        script_constructors.add::<BreakableBallJoint>("BreakableBallJoint");
+        script_constructors.add::<BreakablePrismaticJoint>("BreakablePrismaticJoint");
+        script_constructors.add::<ComponentJoint>("ComponentJoint");
+        script_constructors.add::<ResumePhysics>("ResumePhysics");
     }
 
     fn init(&mut self, scene_path: Option<&str>, context: PluginContext) {
@@ -68,8 +74,9 @@ impl Plugin for Game {
         _path: &Path,
         scene: Handle<Scene>,
         _data: &[u8],
-        _context: &mut PluginContext,
+        context: &mut PluginContext,
     ) {
         self.scene = scene;
+        context.scenes[self.scene].graph.physics.enabled.set_value_and_mark_modified(false);
     }
 }

@@ -84,7 +84,7 @@ impl ScriptTrait for BreakablePrismaticJoint {
         let position2: Vector3<f32> = body2_transform.fixed_view::<3, 1>(0, 3).into();
         let displacement = (position2 - position1).norm();
         if displacement > *self.threshold_displacement {
-            self.break_event.fire(JointBreakEvent, context);
+            self.break_event.fire(JointBreakEvent::new(format!("prismatic joint breaks, displacement: {}", displacement)), context);
         }
     }
 }

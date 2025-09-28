@@ -2,11 +2,7 @@ use std::any::TypeId;
 
 use fyrox::{
     core::{
-        arrayvec::ArrayVec,
-        pool::{ErasedHandle, Handle},
-        reflect::prelude::*,
-        type_traits::prelude::*,
-        visitor::prelude::*,
+        arrayvec::ArrayVec, log::{Log, MessageKind}, pool::{ErasedHandle, Handle}, reflect::prelude::*, type_traits::prelude::*, visitor::prelude::*, warn
     },
     event::Event,
     graph::{BaseSceneGraph, SceneGraph, SceneGraphNode},
@@ -78,10 +74,6 @@ impl ScriptTrait for ComponentJoint {
         }
         // add the connection
         // let connected_body1 = context.scene.graph.try_get_mut_of
-        let connected_body1 = ErasedHandle::from(self.connected_body1);
-        let connected_body1 = Handle::<RigidBody>::from(connected_body1);
-        let connected_body2 = ErasedHandle::from(self.connected_body2);
-        let connected_body2 = Handle::<RigidBody>::from(connected_body2);
         let mbc = context.scene.graph.begin_multi_borrow();
         let mut ball_joint1 = mbc
             .try_get_component_of_type_mut::<Joint>(self.ball_joint1.cast())
@@ -89,8 +81,9 @@ impl ScriptTrait for ComponentJoint {
         let mut ball_joint2 = mbc
             .try_get_component_of_type_mut::<Joint>(self.ball_joint2.cast())
             .unwrap();
-        ball_joint1.set_body2(connected_body1);
-        ball_joint2.set_body2(connected_body2);
+        ball_joint1.set_body2(self.connected_body1.transmute());
+        ball_joint2.set_body2(self.connected_body2.transmute());
+        println!("Successfully connected ball joints to the bodies");
     }
 
     fn on_deinit(&mut self, context: &mut ScriptDeinitContext) {
@@ -109,9 +102,11 @@ impl ScriptTrait for ComponentJoint {
         message: &mut dyn fyrox::script::ScriptMessagePayload,
         ctx: &mut fyrox::script::ScriptMessageContext,
     ) {
-        if let Some(_joint_break_event) = message.downcast_ref::<JointBreakEvent>() {
-            println!("A joint breaks, deleting current node");
-            ctx.scene.graph.remove_node(ctx.handle);
+        if let Some(joint_break_event) = message.downcast_ref::<JointBreakEvent>() {
+            Log::set_verbosity(MessageKind::Warning);
+            Log::warn(format!("Joint break event received: {}", joint_break_event.message));
+            // println!("A joint breaks, deleting current node");
+            // ctx.scene.graph.remove_node(ctx.handle);
         }
     }
 }
