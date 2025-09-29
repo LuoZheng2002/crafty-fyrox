@@ -1,10 +1,8 @@
 //! Game project.
 use fyrox::{
-    core::pool::Handle,
-    core::reflect::prelude::*,
-    core::visitor::prelude::*,
+    core::{pool::Handle, reflect::prelude::*, visitor::prelude::*},
     event::Event,
-    gui::message::UiMessage,
+    gui::{message::UiMessage, UserInterface},
     plugin::{Plugin, PluginContext, PluginRegistrationContext},
     scene::Scene,
 };
@@ -25,6 +23,7 @@ mod events;
 mod my_event;
 mod test;
 mod resume_physics;
+mod revolute_motor;
 
 #[derive(Clone, Default, Visit, Reflect, Debug)]
 pub struct Game {
@@ -39,6 +38,7 @@ impl Plugin for Game {
         script_constructors.add::<BreakablePrismaticJoint>("BreakablePrismaticJoint");
         script_constructors.add::<ComponentJoint>("ComponentJoint");
         script_constructors.add::<ResumePhysics>("ResumePhysics");
+        script_constructors.add::<revolute_motor::RevoluteMotor>("RevoluteMotor");
     }
 
     fn init(&mut self, scene_path: Option<&str>, context: PluginContext) {
@@ -59,7 +59,12 @@ impl Plugin for Game {
         // Do something on OS event here.
     }
 
-    fn on_ui_message(&mut self, _context: &mut PluginContext, _message: &UiMessage) {
+    fn on_ui_message(
+        &mut self,
+        _context: &mut PluginContext,
+        _message: &UiMessage,
+        _ui_handle: Handle<UserInterface>
+    ) {
         // Handle UI events here.
     }
 

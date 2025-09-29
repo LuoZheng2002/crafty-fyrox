@@ -62,6 +62,23 @@ impl ScriptTrait for BreakablePrismaticJoint {
     }
 
     fn on_update(&mut self, context: &mut ScriptContext) {
+
+        let joint = context
+            .scene
+            .graph
+            .try_get_mut_of_type::<Joint>(context.handle)
+            .expect("BreakableBallJoint must be attached to a Joint node");
+        joint
+            .set_motor_target_position_as_prismatic(
+                *self.target_position,
+                *self.stiffness,
+                *self.max_force,
+                *self.damping,
+            )
+            .expect("The joint is supposed to be a ball joint");
+
+
+        println!("Setting motor target position");
         // Put object logic here.
         let joint = context
             .scene

@@ -50,7 +50,7 @@ impl ScriptTrait for BreakableBallJoint {
             .try_get_mut_of_type::<Joint>(context.handle)
             .expect("BreakableBallJoint must be attached to a Joint node");
         joint
-            .set_motor_resistive_torque_as_ball(*self.stiffness, *self.damping, *self.max_torque)
+            .set_motor_resistive_torque_as_ball(*self.stiffness, *self.max_torque, *self.damping)
             .expect("The joint is supposed to be a ball joint");
     }
 
