@@ -1466,8 +1466,8 @@ __ROOT__[]
 														TargetPosition[Value<f32:0>Flags<u8:1>]{}
 														Stiffness[Value<f32:1000>Flags<u8:1>]{}
 														MaxForce[Value<f32:10000>Flags<u8:1>]{}
-														Damping[Value<f32:10>Flags<u8:1>]{}
-														ThresholdDisplacement[Value<f32:0>Flags<u8:1>]{}
+														Damping[Value<f32:100>Flags<u8:1>]{}
+														ThresholdDisplacement[Value<f32:0.5>Flags<u8:1>]{}
 													}
 												}
 											}

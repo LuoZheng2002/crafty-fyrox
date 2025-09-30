@@ -82,16 +82,7 @@ __ROOT__[]
 									CastShadows[Value<bool:true>Flags<u8:1>]{}
 									Enabled[Value<bool:true>Flags<u8:1>]{}
 									RenderMask[Value<u32:4294967295>Flags<u8:1>]{}
-									Scripts[Length<u32:1>]
-									{
-										Item0[TypeUuid<uuid:3e104901-538e-43b7-ae62-06956fea3bc3>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]{}
-											}
-										}
-									}
+									Scripts[Length<u32:0>]{}
 								}
 							}
 						}
@@ -2412,20 +2403,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:26>Generation<u32:1>]{}
-													BallJoint2[Index<u32:27>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:28>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:7>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:16>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -2454,13 +2432,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -2491,13 +2463,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -2528,13 +2494,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -2694,20 +2654,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:34>Generation<u32:1>]{}
-													BallJoint2[Index<u32:35>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:36>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:10>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:19>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -2736,13 +2683,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -2773,13 +2714,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -2810,13 +2745,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -2977,20 +2906,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:42>Generation<u32:1>]{}
-													BallJoint2[Index<u32:43>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:44>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:13>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:22>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -3019,13 +2935,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3056,13 +2966,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3093,13 +2997,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -3259,20 +3157,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:50>Generation<u32:1>]{}
-													BallJoint2[Index<u32:51>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:52>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:7>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:10>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -3301,13 +3186,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3338,13 +3217,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3375,13 +3248,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -3541,20 +3408,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:58>Generation<u32:1>]{}
-													BallJoint2[Index<u32:59>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:60>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:10>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:13>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -3583,13 +3437,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3620,13 +3468,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3657,13 +3499,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -3823,20 +3659,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:66>Generation<u32:1>]{}
-													BallJoint2[Index<u32:67>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:68>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:16>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:19>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -3865,13 +3688,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3902,13 +3719,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -3939,13 +3750,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -4105,20 +3910,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:74>Generation<u32:1>]{}
-													BallJoint2[Index<u32:75>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:76>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:19>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:22>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -4147,13 +3939,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -4184,13 +3970,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -4221,13 +4001,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -4388,20 +4162,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:82>Generation<u32:1>]{}
-													BallJoint2[Index<u32:83>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:84>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:114>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:7>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -4430,13 +4191,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -4467,13 +4222,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -4508,7 +4257,14 @@ __ROOT__[]
 											{
 												ScriptData[Initialized<bool:false>]
 												{
-													Data[]{}
+													Data[]
+													{
+														TargetPosition[Value<f32:0>Flags<u8:1>]{}
+														Stiffness[Value<f32:1000>Flags<u8:1>]{}
+														MaxForce[Value<f32:10000>Flags<u8:1>]{}
+														Damping[Value<f32:100>Flags<u8:1>]{}
+														ThresholdDisplacement[Value<f32:0.5>Flags<u8:1>]{}
+													}
 												}
 											}
 										}
@@ -4671,20 +4427,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:90>Generation<u32:1>]{}
-													BallJoint2[Index<u32:91>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:92>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:126>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:10>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -4713,13 +4456,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -4750,13 +4487,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -4787,13 +4518,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -4954,20 +4679,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:98>Generation<u32:1>]{}
-													BallJoint2[Index<u32:99>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:100>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:138>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:16>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -4996,13 +4708,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -5033,13 +4739,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -5070,13 +4770,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -5237,20 +4931,7 @@ __ROOT__[]
 									Original[Index<u32:0>Generation<u32:1>]{}
 									Scripts[Length<u32:1>]
 									{
-										Item0[TypeUuid<uuid:c67d8138-7262-4825-bff1-d501d29c2483>]
-										{
-											ScriptData[Initialized<bool:false>]
-											{
-												Data[]
-												{
-													BallJoint1[Index<u32:106>Generation<u32:1>]{}
-													BallJoint2[Index<u32:107>Generation<u32:1>]{}
-													PrismaticJoint[Index<u32:108>Generation<u32:1>]{}
-													ConnectedBody1[Index<u32:150>Generation<u32:1>]{}
-													ConnectedBody2[Index<u32:22>Generation<u32:1>]{}
-												}
-											}
-										}
+										Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 									}
 								}
 							}
@@ -5279,13 +4960,7 @@ __ROOT__[]
 										Original[Index<u32:1>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -5316,13 +4991,7 @@ __ROOT__[]
 										Original[Index<u32:2>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:ecf85b97-9a16-4072-8740-a52d8e80178b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:0>]{}
@@ -5353,13 +5022,7 @@ __ROOT__[]
 										Original[Index<u32:3>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -5806,13 +5469,7 @@ __ROOT__[]
 										Original[Index<u32:10>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -5850,13 +5507,7 @@ __ROOT__[]
 										Original[Index<u32:11>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:905cb4ea-a9cc-4d0a-bc06-dd8703b3cf63>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -6183,13 +5834,7 @@ __ROOT__[]
 										Original[Index<u32:10>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -6551,13 +6196,7 @@ __ROOT__[]
 										Original[Index<u32:10>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -6595,13 +6234,7 @@ __ROOT__[]
 										Original[Index<u32:11>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:905cb4ea-a9cc-4d0a-bc06-dd8703b3cf63>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -6928,13 +6561,7 @@ __ROOT__[]
 										Original[Index<u32:10>Generation<u32:1>]{}
 										Scripts[Length<u32:1>]
 										{
-											Item0[TypeUuid<uuid:8689ab3b-7c7b-4efc-9859-792a07cd409b>]
-											{
-												ScriptData[Initialized<bool:false>]
-												{
-													Data[]{}
-												}
-											}
+											Item0[TypeUuid<uuid:00000000-0000-0000-0000-000000000000>]{}
 										}
 									}
 									LocalFrames[IsSome<u8:1>]
@@ -6997,7 +6624,7 @@ __ROOT__[]
 						{
 							ArcData[Paused<bool:false>]
 							{
-								Listener[Basis<mat3:-0.030791225; 0; -0.9995259; -0.24805842; 0.96871495; 0.0076416456; -0.96825564; -0.2481761; 0.029827919>Position<vec3f32:14.833731; 3.531367; -2.6026583>]{}
+								Listener[Basis<mat3:-0.030791225; 0; -0.9995259; -0.24805842; 0.96871495; 0.0076416456; -0.96825564; -0.2481761; 0.029827919>Position<vec3f32:4.6670465; 0.92551804; -2.2894652>]{}
 								Sources[]
 								{
 									Records[Length<u32:0>]{}

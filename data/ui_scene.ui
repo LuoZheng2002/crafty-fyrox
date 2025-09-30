@@ -90,11 +90,7 @@ __ROOT__[]
 																	}
 																}
 															}
-															Item2[Key<str:"Global.Font.Size">]
-															{
-																Value[Id<u32:0>0<f32:14>]{}
-															}
-															Item3[Key<str:"Global.Brush.Primary">]
+															Item2[Key<str:"Global.Brush.Primary">]
 															{
 																Value[Id<u32:3>]
 																{
@@ -103,6 +99,10 @@ __ROOT__[]
 																		0[R<u8:50>G<u8:50>B<u8:50>A<u8:255>]{}
 																	}
 																}
+															}
+															Item3[Key<str:"Global.Font.Size">]
+															{
+																Value[Id<u32:0>0<f32:14>]{}
 															}
 															Item4[Key<str:"Global.Brush.Highlight">]
 															{
@@ -377,10 +377,10 @@ __ROOT__[]
 						{
 							WidgetData[]
 							{
-								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 21; 21; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:66ad2e9c-3de8-45ca-9980-8b3289c14140>IsResourceInstanceRoot<bool:false>]
+								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 513; 21; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:66ad2e9c-3de8-45ca-9980-8b3289c14140>IsResourceInstanceRoot<bool:false>]
 								{
 									Handle[Index<u32:1>Generation<u32:1>]{}
-									DesiredLocalPosition[Value<vec2f32:0; 0>Flags<u8:1>]{}
+									DesiredLocalPosition[Value<vec2f32:-1; 0>Flags<u8:1>]{}
 									Width[Value<f32:NaN>Flags<u8:1>]{}
 									Height[Value<f32:NaN>Flags<u8:1>]{}
 									MinSize[Value<vec2f32:0; 0>Flags<u8:1>]{}
@@ -540,7 +540,7 @@ __ROOT__[]
 							{
 								Border[]
 								{
-									Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 20; 20; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:0146fff5-4146-47ff-ab54-272cca1eb547>IsResourceInstanceRoot<bool:false>]
+									Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 512; 20; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:0146fff5-4146-47ff-ab54-272cca1eb547>IsResourceInstanceRoot<bool:false>]
 									{
 										Handle[Index<u32:2>Generation<u32:1>]{}
 										DesiredLocalPosition[Value<vec2f32:0; 0>Flags<u8:1>]{}
@@ -684,10 +684,10 @@ __ROOT__[]
 						{
 							WidgetData[]
 							{
-								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 20; 20; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:true>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:true>Id<uuid:330411d2-e85e-4738-bd2f-88497a71f8af>IsResourceInstanceRoot<bool:false>]
+								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 512; 20; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:true>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:true>Id<uuid:330411d2-e85e-4738-bd2f-88497a71f8af>IsResourceInstanceRoot<bool:false>]
 								{
 									Handle[Index<u32:3>Generation<u32:1>]{}
-									DesiredLocalPosition[Value<vec2f32:20; 20>Flags<u8:1>]{}
+									DesiredLocalPosition[Value<vec2f32:512; 20>Flags<u8:1>]{}
 									Width[Value<f32:160>Flags<u8:1>]{}
 									Height[Value<f32:32>Flags<u8:1>]{}
 									MinSize[Value<vec2f32:0; 0>Flags<u8:1>]{}
@@ -802,12 +802,12 @@ __ROOT__[]
 						{
 							WidgetData[]
 							{
-								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 300; 300; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:783256df-87b9-49f6-89a3-5fb1f415bd25>IsResourceInstanceRoot<bool:false>]
+								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 100; 100; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:783256df-87b9-49f6-89a3-5fb1f415bd25>IsResourceInstanceRoot<bool:false>]
 								{
 									Handle[Index<u32:4>Generation<u32:1>]{}
-									DesiredLocalPosition[Value<vec2f32:300; 300>Flags<u8:1>]{}
-									Width[Value<f32:NaN>Flags<u8:1>]{}
-									Height[Value<f32:NaN>Flags<u8:1>]{}
+									DesiredLocalPosition[Value<vec2f32:100; 100>Flags<u8:1>]{}
+									Width[Value<f32:1000>Flags<u8:1>]{}
+									Height[Value<f32:200>Flags<u8:1>]{}
 									MinSize[Value<vec2f32:0; 0>Flags<u8:1>]{}
 									MaxSize[Value<vec2f32:inf; inf>Flags<u8:1>]{}
 									Background[Flags<u8:1>]
@@ -930,7 +930,7 @@ __ROOT__[]
 									{
 										Value[IsSome<u8:0>]{}
 									}
-									Height[Value<f32:14>Flags<u8:1>]{}
+									Height[Value<f32:100>Flags<u8:1>]{}
 									Shadow[Value<bool:false>Flags<u8:1>]{}
 									ShadowBrush[Flags<u8:1>]
 									{

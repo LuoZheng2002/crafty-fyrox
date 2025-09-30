@@ -1,0 +1,6 @@
+1. Automatic expand a node on click (not desired)
+2. Collapse all also collapses root, which is useless
+3. After setting joint's children, the joint binding won't update when children are repositioned
+4. Prefab system is buggy. At least need some ways to reset to the prefab's setting. Track changes explicitly in the editor.
+5. UI does not support adapting to screen resolutions.
+6. 

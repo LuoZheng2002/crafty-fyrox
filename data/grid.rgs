@@ -255,7 +255,7 @@ __ROOT__[]
 																						{
 																							State[Id<u64:3>]
 																							{
-																								ArcData[ResourceUuid<uuid:58b0e112-a21a-481f-b305-a2dc5a8bea1f>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
+																								ArcData[ResourceUuid<uuid:9709eef2-305c-44da-91e5-6f293d74408a>TypeUuid<uuid:02c23a44-55fa-411a-bc39-eb7a5eadf15c>]
 																								{
 																									Kind[Id<u32:1>]{}
 																								}
@@ -907,7 +907,7 @@ __ROOT__[]
 						{
 							ArcData[Paused<bool:false>]
 							{
-								Listener[Basis<mat3:-0.59783447; 0; -0.8016194; -0.3341717; 0.9089657; 0.24921973; -0.72864467; -0.4168707; 0.54341114>Position<vec3f32:2.8752537; 1.2665322; -2.2316203>]{}
+								Listener[Basis<mat3:-0.6599839; 0; -0.7512798; -0.27866516; 0.92866457; 0.2448016; -0.697687; -0.37092057; 0.61290365>Position<vec3f32:3.2191982; 1.6892556; -2.7818005>]{}
 								Sources[]
 								{
 									Records[Length<u32:0>]{}

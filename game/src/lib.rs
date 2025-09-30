@@ -1,10 +1,6 @@
 //! Game project.
 use fyrox::{
-    core::{pool::Handle, reflect::prelude::*, visitor::prelude::*},
-    event::Event,
-    gui::{message::UiMessage, UserInterface},
-    plugin::{Plugin, PluginContext, PluginRegistrationContext},
-    scene::Scene,
+    core::{log::Log, pool::Handle, reflect::prelude::*, visitor::prelude::*}, event::Event, gui::{message::UiMessage, UserInterface}, keyboard::KeyCode, plugin::{Plugin, PluginContext, PluginRegistrationContext}, scene::Scene
 };
 use std::path::Path;
 use breakable_ball_joint::BreakableBallJoint;
@@ -14,7 +10,7 @@ use component_joint::ComponentJoint;
 // Re-export the engine.
 pub use fyrox;
 
-use crate::resume_physics::ResumePhysics;
+// use crate::resume_physics::ResumePhysics;
 
 mod breakable_ball_joint;
 mod breakable_prismatic_joint;
@@ -22,7 +18,6 @@ mod component_joint;
 mod events;
 mod my_event;
 mod test;
-mod resume_physics;
 mod revolute_motor;
 
 #[derive(Clone, Default, Visit, Reflect, Debug)]
@@ -37,7 +32,7 @@ impl Plugin for Game {
         script_constructors.add::<BreakableBallJoint>("BreakableBallJoint");
         script_constructors.add::<BreakablePrismaticJoint>("BreakablePrismaticJoint");
         script_constructors.add::<ComponentJoint>("ComponentJoint");
-        script_constructors.add::<ResumePhysics>("ResumePhysics");
+        // script_constructors.add::<ResumePhysics>("ResumePhysics");
         script_constructors.add::<revolute_motor::RevoluteMotor>("RevoluteMotor");
     }
 
@@ -45,14 +40,30 @@ impl Plugin for Game {
         context
             .async_scene_loader
             .request(scene_path.unwrap_or("data/scene.rgs"));
+
+        context.task_pool.spawn_plugin_task(
+            UserInterface::load_from_file("data/ui_scene.ui", context.resource_manager.clone()),
+            |result, game: &mut Game, ctx| match result {
+                Ok(ui) => {
+                    *ctx.user_interfaces.first_mut() = ui;
+                }
+                Err(e) => Log::err(format!("Unable to load a user interface! Reason: {:?}", e)),
+            },
+        );
     }
 
     fn on_deinit(&mut self, _context: PluginContext) {
         // Do a cleanup here.
     }
 
-    fn update(&mut self, _context: &mut PluginContext) {
+    fn update(&mut self, context: &mut PluginContext) {
         // Add your global update code here.
+        if context.input_state.is_key_pressed(KeyCode::Space) {
+            let scene = &mut context.scenes[self.scene];
+            scene.graph.physics.enabled.set_value_and_mark_modified(
+                !scene.graph.physics.enabled.get_value_ref()
+            );
+        }
     }
 
     fn on_os_event(&mut self, _event: &Event<()>, _context: PluginContext) {
