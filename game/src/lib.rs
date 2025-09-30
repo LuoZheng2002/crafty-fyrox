@@ -54,7 +54,11 @@ impl Plugin for Game {
                 Ok(ui) => {
                     let context_user_interface = ctx.user_interfaces.first_mut();
                     *context_user_interface = ui;
-                    context_user_interface.try_get(game.text);
+                    let debug_text = context_user_interface
+                        .find_by_name_from_root("DebugText")
+                        .unwrap();
+                    game.text = debug_text.0.transmute();
+                    // context_user_interface.try_get(game.text);
                 }
                 Err(e) => Log::err(format!("Unable to load a user interface! Reason: {:?}", e)),
             },
@@ -74,6 +78,17 @@ impl Plugin for Game {
                 .physics
                 .enabled
                 .set_value_and_mark_modified(!scene.graph.physics.enabled.get_value_ref());
+        }
+        if context.input_state.is_key_pressed(KeyCode::KeyW) {
+            let debug_text = context
+                .user_interfaces
+                .first_mut()
+                .try_get_mut(self.text)
+                .unwrap();
+            debug_text
+                .formatted_text
+                .borrow_mut()
+                .set_text("Hello World!");
         }
     }
 

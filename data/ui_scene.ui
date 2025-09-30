@@ -100,21 +100,7 @@ __ROOT__[]
 																	}
 																}
 															}
-															Item3[Key<str:"Global.Font.Size">]
-															{
-																Value[Id<u32:0>0<f32:14>]{}
-															}
-															Item4[Key<str:"Global.Brush.Highlight">]
-															{
-																Value[Id<u32:3>]
-																{
-																	0[Id<u32:0>]
-																	{
-																		0[R<u8:80>G<u8:118>B<u8:178>A<u8:255>]{}
-																	}
-																}
-															}
-															Item5[Key<str:"Global.Brush.Text">]
+															Item3[Key<str:"Global.Brush.Text">]
 															{
 																Value[Id<u32:3>]
 																{
@@ -124,13 +110,27 @@ __ROOT__[]
 																	}
 																}
 															}
-															Item6[Key<str:"Global.Brush.Information">]
+															Item4[Key<str:"Global.Brush.Information">]
 															{
 																Value[Id<u32:3>]
 																{
 																	0[Id<u32:0>]
 																	{
 																		0[R<u8:250>G<u8:235>B<u8:215>A<u8:255>]{}
+																	}
+																}
+															}
+															Item5[Key<str:"Global.Font.Size">]
+															{
+																Value[Id<u32:0>0<f32:14>]{}
+															}
+															Item6[Key<str:"Global.Brush.Highlight">]
+															{
+																Value[Id<u32:3>]
+																{
+																	0[Id<u32:0>]
+																	{
+																		0[R<u8:80>G<u8:118>B<u8:178>A<u8:255>]{}
 																	}
 																}
 															}
@@ -802,7 +802,7 @@ __ROOT__[]
 						{
 							WidgetData[]
 							{
-								Widget[Name<str:"">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 100; 100; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:783256df-87b9-49f6-89a3-5fb1f415bd25>IsResourceInstanceRoot<bool:false>]
+								Widget[Name<str:"DebugText">GlobalVisibility<bool:true>IsMouseDirectlyOver<bool:false>TooltipTime<f32:0.1>LayoutTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>RenderTransform<mat3:1; 0; 0; 0; 1; 0; 0; 0; 1>VisualTransform<mat3:1; 0; 0; 0; 1; 0; 100; 100; 1>PreviewMessages<bool:false>HandleOsEvents<bool:false>NeedUpdate<bool:false>IgnoreLayoutRounding<bool:false>AcceptsInput<bool:false>Id<uuid:783256df-87b9-49f6-89a3-5fb1f415bd25>IsResourceInstanceRoot<bool:false>]
 								{
 									Handle[Index<u32:4>Generation<u32:1>]{}
 									DesiredLocalPosition[Value<vec2f32:100; 100>Flags<u8:1>]{}
