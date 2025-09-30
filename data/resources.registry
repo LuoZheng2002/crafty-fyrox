@@ -1,7 +1,10 @@
 {
+    "0817fd11-1a68-42f1-93cb-d2a09c5ef0ff": "data/grid_cell.rgs",
     "0e839359-b1c7-4205-995a-2963b8111c02": "data/unnamed.rgs",
     "39f57023-c39b-428f-9429-f036da8a6694": "data/test_filter.rgs",
     "5ce6bd18-79e2-48e5-a167-e425bc7c8935": "data/scene.rgs",
+    "7d95c81d-fa41-43f4-8255-8c43e3f3bfc8": "data/materials/grid_highlighted.material",
+    "7f5af3c8-a433-44e2-9cae-75ca1acc0098": "data/materials/grid_idle.material",
     "86d6a5ec-f021-4c5f-8189-569117aee3c8": "data/component_joint.rgs",
     "90b4feff-16ba-4a00-845f-9bc92f5c6e2d": "data/test_wheel.rgs",
     "ca639c1b-33bf-4ed1-9466-34c884b51380": "data/grid.rgs",

@@ -10,3 +10,6 @@ impl JointBreakEvent {
         Self { message }
     }
 }
+
+#[derive(ScriptMessagePayload, Clone, Debug, Default)]
+pub struct RayHitEvent;
