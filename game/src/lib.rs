@@ -1,11 +1,17 @@
 //! Game project.
-use fyrox::{
-    core::{log::Log, pool::Handle, reflect::prelude::*, visitor::prelude::*}, event::Event, gui::{message::UiMessage, UserInterface}, keyboard::KeyCode, plugin::{Plugin, PluginContext, PluginRegistrationContext}, scene::Scene
-};
-use std::path::Path;
 use breakable_ball_joint::BreakableBallJoint;
 use breakable_prismatic_joint::BreakablePrismaticJoint;
 use component_joint::ComponentJoint;
+use fyrox::{
+    core::{log::Log, pool::Handle, reflect::prelude::*, visitor::prelude::*},
+    event::Event,
+    graph::prelude::*,
+    gui::{message::UiMessage, text::Text, UserInterface},
+    keyboard::KeyCode,
+    plugin::{Plugin, PluginContext, PluginRegistrationContext},
+    scene::Scene,
+};
+use std::path::Path;
 
 // Re-export the engine.
 pub use fyrox;
@@ -17,12 +23,13 @@ mod breakable_prismatic_joint;
 mod component_joint;
 mod events;
 mod my_event;
-mod test;
 mod revolute_motor;
+mod test;
 
 #[derive(Clone, Default, Visit, Reflect, Debug)]
 pub struct Game {
     scene: Handle<Scene>,
+    text: Handle<Text>,
 }
 
 impl Plugin for Game {
@@ -45,7 +52,9 @@ impl Plugin for Game {
             UserInterface::load_from_file("data/ui_scene.ui", context.resource_manager.clone()),
             |result, game: &mut Game, ctx| match result {
                 Ok(ui) => {
-                    *ctx.user_interfaces.first_mut() = ui;
+                    let context_user_interface = ctx.user_interfaces.first_mut();
+                    *context_user_interface = ui;
+                    context_user_interface.try_get(game.text);
                 }
                 Err(e) => Log::err(format!("Unable to load a user interface! Reason: {:?}", e)),
             },
@@ -60,9 +69,11 @@ impl Plugin for Game {
         // Add your global update code here.
         if context.input_state.is_key_pressed(KeyCode::Space) {
             let scene = &mut context.scenes[self.scene];
-            scene.graph.physics.enabled.set_value_and_mark_modified(
-                !scene.graph.physics.enabled.get_value_ref()
-            );
+            scene
+                .graph
+                .physics
+                .enabled
+                .set_value_and_mark_modified(!scene.graph.physics.enabled.get_value_ref());
         }
     }
 
@@ -74,7 +85,7 @@ impl Plugin for Game {
         &mut self,
         _context: &mut PluginContext,
         _message: &UiMessage,
-        _ui_handle: Handle<UserInterface>
+        _ui_handle: Handle<UserInterface>,
     ) {
         // Handle UI events here.
     }
@@ -93,6 +104,10 @@ impl Plugin for Game {
         context: &mut PluginContext,
     ) {
         self.scene = scene;
-        context.scenes[self.scene].graph.physics.enabled.set_value_and_mark_modified(false);
+        context.scenes[self.scene]
+            .graph
+            .physics
+            .enabled
+            .set_value_and_mark_modified(false);
     }
 }

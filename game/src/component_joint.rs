@@ -2,7 +2,13 @@ use std::any::TypeId;
 
 use fyrox::{
     core::{
-        arrayvec::ArrayVec, log::{Log, MessageKind}, pool::{ErasedHandle, Handle}, reflect::prelude::*, type_traits::prelude::*, visitor::prelude::*, warn
+        arrayvec::ArrayVec,
+        log::{Log, MessageKind},
+        pool::{ErasedHandle, Handle},
+        reflect::prelude::*,
+        type_traits::prelude::*,
+        visitor::prelude::*,
+        warn,
     },
     event::Event,
     graph::{BaseSceneGraph, SceneGraph, SceneGraphNode},
@@ -52,7 +58,7 @@ impl ScriptTrait for ComponentJoint {
                 .scene
                 .graph
                 .try_get(context.handle)
-                .expect("ComponentJoint must be attached to a Node");            
+                .expect("ComponentJoint must be attached to a Node");
             let ball_joint1_script = context
                 .scene
                 .graph
@@ -104,7 +110,10 @@ impl ScriptTrait for ComponentJoint {
     ) {
         if let Some(joint_break_event) = message.downcast_ref::<JointBreakEvent>() {
             Log::set_verbosity(MessageKind::Warning);
-            Log::warn(format!("Joint break event received: {}", joint_break_event.message));
+            Log::warn(format!(
+                "Joint break event received: {}",
+                joint_break_event.message
+            ));
             // println!("A joint breaks, deleting current node");
             // ctx.scene.graph.remove_node(ctx.handle);
         }

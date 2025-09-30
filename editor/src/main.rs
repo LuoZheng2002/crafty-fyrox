@@ -1,18 +1,16 @@
 //! Editor with your game connected to it as a plugin.
-use fyroxed_base::{fyrox::event_loop::EventLoop, Editor, StartupData, fyrox::core::log::Log};
+use fyroxed_base::{fyrox::core::log::Log, fyrox::event_loop::EventLoop, Editor, StartupData};
 
 fn main() {
     Log::set_file_name("crafty.log");
 
     let event_loop = EventLoop::new().unwrap();
-    let mut editor = Editor::new(
-        Some(StartupData {
-            working_directory: Default::default(),
-            scenes: vec!["data/scene.rgs".into()],
-        }),
-    );
-    
-     // Dynamic linking with hot reloading.
+    let mut editor = Editor::new(Some(StartupData {
+        working_directory: Default::default(),
+        scenes: vec!["data/scene.rgs".into()],
+    }));
+
+    // Dynamic linking with hot reloading.
     #[cfg(feature = "dylib")]
     {
         #[cfg(target_os = "windows")]
@@ -30,6 +28,6 @@ fn main() {
         use crafty::Game;
         editor.add_game_plugin(Game::default());
     }
-    
+
     editor.run(event_loop)
 }

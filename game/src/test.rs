@@ -1,7 +1,7 @@
-
 use fyrox::{
-    core::{visitor::prelude::*, reflect::prelude::*, type_traits::prelude::*},
-    event::Event, script::{ScriptContext, ScriptDeinitContext, ScriptTrait},
+    core::{reflect::prelude::*, type_traits::prelude::*, visitor::prelude::*},
+    event::Event,
+    script::{ScriptContext, ScriptDeinitContext, ScriptTrait},
 };
 
 #[derive(Visit, Reflect, Default, Debug, Clone, TypeUuidProvider, ComponentProvider)]
@@ -35,4 +35,3 @@ impl ScriptTrait for Test {
         // Put object logic here.
     }
 }
-    

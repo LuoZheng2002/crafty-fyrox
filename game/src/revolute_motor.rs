@@ -1,6 +1,9 @@
-
 use fyrox::{
-    core::{reflect::prelude::*, type_traits::prelude::*, visitor::prelude::*}, event::Event, graph::prelude::*, scene::joint::Joint, script::{ScriptContext, ScriptDeinitContext, ScriptTrait}
+    core::{reflect::prelude::*, type_traits::prelude::*, visitor::prelude::*},
+    event::Event,
+    graph::prelude::*,
+    scene::joint::Joint,
+    script::{ScriptContext, ScriptDeinitContext, ScriptTrait},
 };
 
 #[derive(Visit, Reflect, Default, Debug, Clone, TypeUuidProvider, ComponentProvider)]
@@ -31,7 +34,8 @@ impl ScriptTrait for RevoluteMotor {
     fn on_update(&mut self, context: &mut ScriptContext) {
         // Put object logic here.
         let revolute_joint = &mut context.scene.graph[context.handle.transmute::<Joint>()];
-        revolute_joint.set_motor_torque_as_revolute(-5.0, 20.0, 0.0).unwrap();
+        revolute_joint
+            .set_motor_torque_as_revolute(-5.0, 20.0, 0.0)
+            .unwrap();
     }
 }
-    

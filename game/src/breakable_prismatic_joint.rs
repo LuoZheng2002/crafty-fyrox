@@ -62,7 +62,6 @@ impl ScriptTrait for BreakablePrismaticJoint {
     }
 
     fn on_update(&mut self, context: &mut ScriptContext) {
-
         let joint = context
             .scene
             .graph
@@ -76,7 +75,6 @@ impl ScriptTrait for BreakablePrismaticJoint {
                 *self.damping,
             )
             .expect("The joint is supposed to be a ball joint");
-
 
         println!("Setting motor target position");
         // Put object logic here.
@@ -101,7 +99,13 @@ impl ScriptTrait for BreakablePrismaticJoint {
         let position2: Vector3<f32> = body2_transform.fixed_view::<3, 1>(0, 3).into();
         let displacement = (position2 - position1).norm();
         if displacement > *self.threshold_displacement {
-            self.break_event.fire(JointBreakEvent::new(format!("prismatic joint breaks, displacement: {}", displacement)), context);
+            self.break_event.fire(
+                JointBreakEvent::new(format!(
+                    "prismatic joint breaks, displacement: {}",
+                    displacement
+                )),
+                context,
+            );
         }
     }
 }
